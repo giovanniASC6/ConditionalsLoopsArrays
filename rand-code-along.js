@@ -1,11 +1,11 @@
 const multiplier = 100;
 
-function rand() {
+function rand(word) {
     const decimal = Math.random();
     const times10 = decimal *multiplier;
     const final = Math.floor(times10);
    
-    return final
+    return final + word;
 }
 
-console.log(rand());
+console.log(rand(" times"));
